@@ -67,7 +67,7 @@ header.masthead .masthead-heading {
     margin-bottom: 4rem;
   }
 }
-
+/*
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -136,6 +136,7 @@ header.masthead .masthead-heading {
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff4cc;
 }
+*/
 
 *,
 *::before,
