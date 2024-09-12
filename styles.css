@@ -68,6 +68,16 @@ header.masthead .masthead-heading {
   }
 }
 
+.page-section {
+  padding: 6rem 0;
+}
+.page-section h2.section-heading, .page-section .section-heading.h2 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
 .page-section h3.section-subheading, .page-section .section-subheading.h3 {
   font-size: 1.2rem;
   font-weight: 400;
@@ -10854,15 +10864,6 @@ body {
 
 p {
   line-height: 1.75;
-}
-
-.page-section {
-  padding: 6rem 0;
-}
-.page-section h2.section-heading, .page-section .section-heading.h2 {
-  font-size: 2.5rem;
-  margin-top: 0;
-  margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
