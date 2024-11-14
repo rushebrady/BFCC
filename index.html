@@ -71,16 +71,28 @@
         </style>
     </head>
     <body>
-        <nav id="mainNav" class="navbar navbar-expand-lg bg-dark fc-white">
-            <div class="container">
+        <nav id="mainnavbar" class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid">
                 <span class="fw-bold fs20">Bookkeeping For Contractors Colorado [BFCC]</span>
-                <div id="navbarResponsive" class="collapse navbar-collapse">
-                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-responsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbar-responsive" class="collapse navbar-collapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0 py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link fc-white" href="#about">ABOUT</a></li>
                         <li class="nav-item"><a class="nav-link" href="#services">SERVICES</a></li>
                         <!-- <li class="nav-item"><a class="nav-link" href="#portfolio">PORTFOLIO</a></li> -->
                         <li class="nav-item"><a class="nav-link" href="#pricing">PRICING</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#about">ABOUT</a></li>
+                                <li><a class="dropdown-item" href="#services">SERVICES</a></li>
+                                <li><a class="dropdown-item" href="#pricing">PRICIING</a></li>
+                                <li><a class="dropdown-item" href="#contact">CONTACT</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
