@@ -15,6 +15,8 @@
         <style>
             body {background-color:#000000;}
             section {padding:6rem 0;}
+            header {margin:0; text-align:center; color: #000000; font-weight:400;}
+            footer {padding-bottom:20px;}
             address {margin:0; padding:0;}
             p {font-size:18px; padding-bottom:20px; line-height:1.6;}
             h1 {font-size:52px; margin:0px; padding:0px 0px 30px 0px; font-weight:800;}
@@ -22,7 +24,13 @@
             ol {font-size:20px; line-height:2.0;}
             li {line-height:2.0;}
             
-            footer.footer {padding-bottom:20px;}
+            nav .nav-link {color:rgba(255,255,255,.5);border-bottom:.25rem solid transparent;}
+            nav .nav-link:hover, .nav-masthead .nav-link:focus {border-bottom-color:rgba(255,255,255,.25);}
+            nav .nav-link + .nav-link {margin-left:1rem;}
+            nav .active {color:#fff; border-bottom-color:#fff;}
+            header h1 {padding-top:12px;}
+            header h2 {padding-bottom:2rem; line-height:1.7;}
+            @media (min-width:768px) {header {padding-top:4rem; padding-bottom:4rem;}}
             ul.list-group {margin:40px 0px 50px 0px;font-size:20px;}
             ul.list-group li {padding:20px 20px 40px 30px;}
             ul.none {list-style-type:none;}
@@ -34,32 +42,22 @@
             .fw-bold {font-weight:700 !important;}
             .fst-italic {font-style:italic !important;}
             .fs22{font-size:22px;} .fs24{font-size:24px;} .fs40{font-size:40px;}
-
-            .nav-masthead .nav-link {color:rgba(255,255,255,.5);border-bottom:.25rem solid transparent;}
-            .nav-masthead .nav-link:hover, .nav-masthead .nav-link:focus {border-bottom-color:rgba(255,255,255,.25);}
-            .nav-masthead .nav-link + .nav-link {margin-left:1rem;}
-            .nav-masthead .active {color:#fff; border-bottom-color:#fff;}
-            
-            header {margin:0; text-align:center; color: #000000; font-weight:400;}
-            header h1 {padding-top:12px;}
-            header h2 {padding-bottom:2rem; line-height:1.7;}
-            @media (min-width:768px) {header {padding-top:4rem; padding-bottom:4rem;}}
         </style>
     </head>
 <!--BODY & DIV BODY-->
 <body class="d-flex h-100">
 <div class="d-flex flex-column w-100 h-100 mx-auto">
-    <!--NAVBAR-->
+    <!--NAV-->
     <div class="bg-gray">
         <a href="index.html"><h3 class="float-md-start mb-0 px-4 py-1 fc-white">Bookkeeping For Contractors Colorado [BFCC]</h3></a>
-        <nav class="nav nav-masthead justify-content-center float-md-end px-3">
+        <nav class="nav justify-content-center float-md-end px-3">
           <a class="nav-link fw-bold py-3 px-0" href="index.html">ABOUT</a>
           <a class="nav-link fw-bold py-3 px-0" href="#solutions">SOLUTIONS</a>
           <a class="nav-link fw-bold py-3 px-0" href="#faq">FAQ</a>
           <a class="nav-link fw-bold py-3 px-0 active" href="pricing.html">PRICING</a>
         </nav>
     </div>
-    <!--END NAVBAR-->
+    <!--END NAV-->
     <!--HEADER-->
     <header class="masthead bg-white">
         <div class="container-sm">
@@ -140,7 +138,7 @@
         </section>
         <!--END ABOVEFOOTER-->
         <!--FOOTER-->
-        <footer id="contact" class="footer py-5 bg-white">
+        <footer id="contact" class="py-5 bg-white">
             <h2 class="text-center py-5">Bookkeeping &bull; Accounting &bull; Payroll &bull; Tax &bull; Profit<br>for Colorado Contractors</h2>
             <div class="container-sm">
                 <div class="row align-items-center">
