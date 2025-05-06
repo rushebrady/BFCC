@@ -20,22 +20,23 @@
             footer {padding-bottom:22px; text-align:center; margin:0;} footer h2 {padding:46px 0 48px 0;}
             address {padding:0; margin:0;}
             div#navbar-top {padding:10px 10px 10px 14px;}
-            div#navbar-top h3 {font-size:30px; text-align:center; line-height:1; padding-top:10px;}
-            div#navbar-top h3 a.nav-link:hover {color:#ffffff; border-bottom:2px solid #ffffff;}
+            div#navbar-top a#logo.nav-link {font-size:30px; text-align:center; color:#ffffff; border-bottom:2px solid transparent; padding-top:2px;}
+            div#navbar-top a#logo.nav-link.active {border-bottom-color:#ffffff;}
+            div#navbar-top a#logo.nav-link:hover {border-bottom-color:#ffffff;}
             div#navbar-top nav {font-size:22px; font-weight:700; padding:0; margin:0;}
             div#navbar-top nav a.nav-link {color:#ffffff; border-bottom:2px solid transparent; margin-left:16px;}
             div#navbar-top nav a.nav-link.active {border-bottom-color:#ffffff;}
             div#navbar-top nav a.nav-link:hover, a.nav-link:focus {border-bottom-color:#ffffff;}
-            @media (max-width:575px) { div#navbar-top h3 {font-size:24px;} }
-            div#navbar-bottom nav {font-size:22px; font-weight:700; color:#ffffff; padding:60px 0; margin:0;}
+            @media (max-width:575px) { div#navbar-top a#logo.nav-link {font-size:24px;} }
+            div#navbar-bottom nav {font-size:22px; font-weight:700; padding:60px 0; margin:0;}
             div#navbar-bottom nav a.nav-link {color:#ffffff; border-bottom:2px solid transparent; margin-left:16px;}
             div#navbar-bottom nav a.nav-link.active {border-bottom-color:#ffffff;}
             div#navbar-bottom nav a.nav-link:hover, a.nav-link:focus {border-bottom-color:#ffffff;}
             img{max-width:100%; height:auto; display:block; border:0; outline:0; margin:0 auto;}
             p {font-size:20px; padding-bottom:18px; line-height:1.6; margin:0;}
             h1 {font-size:72px; font-weight:800; line-height:1.6; text-align:center; padding:0 0 28px 0; margin:0;}
-            h2 {font-size:44px; font-weight:600; line-height:1.7; text-align:center; margin:0;}
-            h3 {font-size:38px; font-weight:400; line-height:1.7; margin:0;}
+            h2 {font-size:52px; font-weight:600; line-height:1.7; text-align:center; margin:0;}
+            h3 {font-size:42px; font-weight:400; line-height:1.7; margin:0;}
             h4 {font-size:30px; font-weight:300; line-height:1.7; margin:0;} h5 {margin:0;} h6 {margin:0;}
             li {font-size:20px; line-height:2.0;}
             .lst-none {list-style-type:none;}
@@ -47,8 +48,6 @@
             .fs-italic {font-style:italic;}
             .fw-bold {font-weight:600;}
             .font22{font-size:22px;} .font24{font-size:24px;} .font26{font-size:26px;} .font36{font-size:36px;} .font40{font-size:40px;}
-
-            div#navbar-top h3 a.nav-link {color:#ffffff; border-bottom:2px solid transparent;}
     
             header h3 {padding-top:30px; padding-bottom:30px; text-align:center;}
             @media (min-width:576px) {header div h1 {font-size:42px;} header div h3 {font-size:24px;} }
@@ -67,7 +66,7 @@
 <div class="d-flex flex-column w-100 mx-auto">
     <!--NAV-->
     <div id="navbar-top" class="bg-black fc-white">
-        <h3 class="justify-content-center float-xl-start"><a class="nav-link" href="./">Bookkeeping for Contractors Colorado</a></h3>
+        <a id="logo" class="nav-link justify-content-center float-xl-start" href="./">Bookkeeping for Contractors Colorado</a>
         <nav class="nav justify-content-center float-xl-end bg-black fc-white">
           <a class="nav-link" href="./servies.html">SERVICES</a>
           <a class="nav-link" href="./about.html">ABOUT</a>
