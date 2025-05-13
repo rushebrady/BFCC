@@ -64,6 +64,10 @@
             @media (min-width:1200px) { section#whowehelp div h1 {font-size:54px;} section#whowehelp div h2 {font-size:46px;} section#whowehelp div h3 {font-size:38px;} section#whowehelp div p {font-size:24px;} }
             @media (min-width:1400px) { section#whowehelp div h1 {font-size:72px;} section#whowehelp div h2 {font-size:52px;} section#whowehelp div h3 {font-size:42px;} section#whowehelp div p {font-size:26px;} }
 
+            section#bizcard div.card {border-radius:15px;}
+            section#bizcard img {height:100%; border-radius:15px 0 0 15px;}
+            @media (min-width:1400px) { section#bizcard {padding:100px 380px;} }
+            
             section#whatsay p#whatsaypgraph {font-weight:600; padding:0; margin:0;}
             @media (max-width:575px) { section#whatsay div h1 {font-size:36px;} section#whatsay p#whatsaypgraph {font-size:12px;} }
             @media (min-width:576px) { section#whatsay div h1 {font-size:40px;} section#whatsay p#whatsaypgraph {font-size:14px;} }
@@ -71,10 +75,6 @@
             @media (min-width:992px) { section#whatsay div h1 {font-size:50px;} section#whatsay p#whatsaypgraph {font-size:24px;} }
             @media (min-width:1200px) { section#whatsay div h1 {font-size:56px;} section#whatsay p#whatsaypgraph {font-size:26px;} }
             @media (min-width:1400px) { section#whatsay div h1 {font-size:72px;} section#whatsay p#whatsaypgraph {font-size:26px;} }
-
-            section#card div.card {border-radius:15px;}
-            section#card img {height:100%; border-radius:15px 0 0 15px;}
-            @media (min-width:1400px) { section#card {padding:100px 380px;} }
 
             @media (max-width:575px) { footer h2 {font-size:30px;} }
             @media (min-width:576px) { footer h2 {font-size:46px;} }
@@ -126,19 +126,57 @@
         </div>
         </section>
         <!--END WHO WE HELP-->
+        <!--BIZ CARDS-->
+        <section id="bizcard" class="bg-white fc-black">
+        <div class="container-md">
+            <div class="col">
+              <div class="card">
+                <div class="row g-0">
+                  <div class="col-md-8">
+                    <div class="card-body pt-3 ps-5">
+                      <h3 class="card-title fw-bold">David&nbsp;Rushe&nbsp;Brady</h3>
+                      <p class="card-text">Owner<br>david@bkcc.biz<br>720-593-0103</p>
+                      <p class="card-text text-body-secondary fs-italic mb-0 pb-0">&ldquo;Bookkeeping &amp; accounting services you can trust.&rdquo;</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4"><img src="brady3.jpg" alt="&nbsp;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <div class="container-md">
+            <div class="col">
+              <div class="card">
+                <div class="row g-0">
+                  <div class="col-md-4"><img src="avory1.jpg" alt="&nbsp;"></div>
+                  <div class="col-md-8">
+                    <div class="card-body pt-3 ps-5">
+                      <h3 class="card-title fw-bold">Avory&nbsp;Gallegos</h3>
+                      <p class="card-text">Operations Manager<br>avory@bkcc.biz<br>720-593-0103</p>
+                      <p class="card-text text-body-secondary fs-italic mb-0 pb-0">&ldquo;Keep more of what you earn with accurate financials.&rdquo;</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+        <!--END BIZ CARDS-->
         <!--WHAT CUSTOMERS SAY-->
-        <section id="whatsay" class="bg-black fc-black">
+        <section id="whatsay" class="bg-black">
         <div class="container-lg">
             <h1 class="fc-white">What Our Customers Say</h1>
             <div class="row">
                 <div class="col mb-4">
-                    <div class="card bg-white"><div class="card-body pt-4"><p id="whatsaypgraph">...helped me to <span>free up my time.</span></p></div></div>
+                    <div class="card"><div class="card-body pt-4"><p id="whatsaypgraph">...helped me to <span>free up my time.</span></p></div></div>
                 </div>
                 <div class="col mb-4">
-                    <div class="card bg-white"><div class="card-body pt-4"><p id="whatsaypgraph">...<span>changed my business results.</span></p></div></div>
+                    <div class="card"><div class="card-body pt-4"><p id="whatsaypgraph">...<span>changed my business results.</span></p></div></div>
                 </div>
                 <div class="col mb-4">
-                    <div class="card bg-white"><div class="card-body pt-4"><p id="whatsaypgraph">...<span>caused me to increase sales.</span></p></div></div>
+                    <div class="card"><div class="card-body pt-4"><p id="whatsaypgraph">...<span>caused me to increase sales.</span></p></div></div>
                 </div>
             </div>
             <div class="row">
@@ -302,44 +340,6 @@
         <!--end TEAM-->
     </main>
     <!--END MAIN-->
-    <!--CARDS-->
-    <section id="card" class="bg-white fc-black">
-    <div class="container-md">
-            <div class="col">
-              <div class="card">
-                <div class="row g-0">
-                  <div class="col-md-8">
-                    <div class="card-body pt-3 ps-5">
-                      <h3 class="card-title fw-bold">David&nbsp;Rushe&nbsp;Brady</h3>
-                      <p class="card-text">Owner<br>david@bkcc.biz<br>720-593-0103</p>
-                      <p class="card-text text-body-secondary fs-italic mb-0 pb-0">&ldquo;Bookkeeping &amp; accounting services you can trust.&rdquo;</p>
-                    </div>
-                  </div>
-                  <div class="col-md-4"><img src="brady3.jpg" alt="&nbsp;"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <div class="container-md">
-            <div class="col">
-              <div class="card">
-                <div class="row g-0">
-                  <div class="col-md-4"><img src="avory1.jpg" alt="&nbsp;"></div>
-                  <div class="col-md-8">
-                    <div class="card-body pt-3 ps-5">
-                      <h3 class="card-title fw-bold">Avory&nbsp;Gallegos</h3>
-                      <p class="card-text">Operations Manager<br>avory@bkcc.biz<br>720-593-0103</p>
-                      <p class="card-text text-body-secondary fs-italic mb-0 pb-0">&ldquo;Keep more of what you earn with accurate financials.&rdquo;</p>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-    </div>
-    </section>
-    <!--END CARDS-->
     <!--BIZICONS-->
         <section id="bizicons" class="bg-white">
         <div class="container-md">
