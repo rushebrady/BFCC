@@ -16,22 +16,24 @@
         <link href="navbar.css" rel="stylesheet">
         <style>
             section {padding:80px 0; margin:0;}
-            header {text-align:center; padding:30px 0; margin:0;}
-            footer {padding-bottom:22px; text-align:center; margin:0;} footer h2 {padding:46px 0 48px 0;}
+            header {border-top:3px solid #c0c0c0; color:#ffffff; text-align:center; padding:20px 0 30px 0; margin:0;}
+            footer {border-top:3px solid #c0c0c0; color:#c0c0c0; padding-bottom:22px; text-align:center; margin:0;} footer h2 {padding:48px 0;}
             address {padding:0; margin:0;}
-            div#navbar-top {padding:10px 10px 10px 14px;}
-            div#navbar-top a#logo.nav-link {font-size:30px; text-align:center; color:#ffffff; border-bottom:2px solid transparent; padding-top:2px;}
-            div#navbar-top a#logo.nav-link.active {border-bottom-color:#ffffff;}
-            div#navbar-top a#logo.nav-link:hover {border-bottom-color:#ffffff;}
-            div#navbar-top nav {font-size:22px; font-weight:700; padding:0; margin:0;}
-            div#navbar-top nav a.nav-link {color:#ffffff; border-bottom:2px solid transparent; margin-left:16px;}
-            div#navbar-top nav a.nav-link.active {border-bottom-color:#ffffff;}
-            div#navbar-top nav a.nav-link:hover, a.nav-link:focus {border-bottom-color:#ffffff;}
-            @media (max-width:575px) { div#navbar-top a#logo.nav-link {font-size:24px;} }
-            div#navbar-bottom nav {font-size:22px; font-weight:700; padding:60px 0; margin:0;}
-            div#navbar-bottom nav a.nav-link {color:#ffffff; border-bottom:2px solid transparent; margin-left:16px;}
-            div#navbar-bottom nav a.nav-link.active {border-bottom-color:#ffffff;}
-            div#navbar-bottom nav a.nav-link:hover, a.nav-link:focus {border-bottom-color:#ffffff;}
+            div#navbar-top {color:#c0c0c0; background-color:#000000; padding:16px 10px 40px 14px;}
+            div#navbar-top a#logo.nav-link {color:#c0c0c0; font-size:30px; text-align:center; border-bottom:2px solid transparent; padding-top:2px;}
+            div#navbar-top a#logo.nav-link:hover {border-bottom-color:#c0c0c0;}
+            div#navbar-top nav {color:#c0c0c0; background-color:#000000; font-size:22px; font-weight:700; padding:0; margin:0;}
+            div#navbar-top nav a.nav-link {color:#c0c0c0; border-bottom:2px solid transparent; margin-left:16px;}
+            div#navbar-top nav a.nav-link.active {border-bottom-color:#c0c0c0;}
+            div#navbar-top nav a.nav-link:hover, a.nav-link:focus {border-bottom-color:#c0c0c0;}
+            @media (max-width:575px) { div#navbar-top a#logo.nav-link {font-size:20px;} }
+            @media (max-width:575px) { div#navbar-top nav {font-size:20px; font-weight:400;} }
+            div#navbar-bottom nav {background-color:#000000; font-size:24px; font-weight:700; padding:60px 0; margin:0;}
+            div#navbar-bottom nav a.nav-link {color:#c0c0c0; border-bottom:2px solid transparent; margin-left:16px;}
+            div#navbar-bottom nav a.nav-link.active {border-bottom-color:#c0c0c0;}
+            div#navbar-bottom nav a.nav-link:hover, a.nav-link:focus {border-bottom-color:#c0c0c0;}
+            @media (min-width:1200px) { div#navbar-bottom nav {font-size:34px;} }
+            @media (min-width:1400px) { div#navbar-bottom nav {font-size:38px;} }
             img{max-width:100%; height:auto; display:block; border:0; outline:0; margin:0 auto;}
             p {font-size:20px; padding-bottom:18px; line-height:1.6; margin:0;}
             h1 {font-size:72px; font-weight:800; line-height:1.6; text-align:center; padding:0 0 28px 0; margin:0;}
@@ -40,13 +42,10 @@
             h4 {font-size:30px; font-weight:300; line-height:1.7; margin:0;} h5 {margin:0;} h6 {margin:0;}
             li {font-size:20px; line-height:2.0;}
             .lst-none {list-style-type:none;}
-            .bg-clear {background-color:transparent;}
-            .bg-black {background-color:#212529;}
-            .bg-white {background-color:#ffffff;}
-            .fc-black {color:#212529;}
-            .fc-white {color:#ffffff;}
+            .bg-clear {background-color:transparent;} .bg-black {background-color:#212529;} .bg-white {background-color:#ffffff;}
+            .fc-black {color:#212529;} .fc-white {color:#ffffff;} .fc-silver {color:#c0c0c0;}
             .fs-italic {font-style:italic;}
-            .fw-bold {font-weight:600;}
+            .bold600 {font-weight:600;} .bold700 {font-weight:700;}
             .font22{font-size:22px;} .font24{font-size:24px;} .font26{font-size:26px;} .font36{font-size:36px;} .font40{font-size:40px;}
     
             header h3 {padding-top:30px; padding-bottom:30px; text-align:center;}
@@ -65,9 +64,9 @@
 <body class="bg-black">
 <div class="d-flex flex-column w-100 mx-auto">
     <!--NAV-->
-    <div id="navbar-top" class="bg-black fc-white">
+    <div id="navbar-top">
         <a id="logo" class="nav-link justify-content-center float-xl-start" href="./">Bookkeeping for Contractors Colorado</a>
-        <nav class="nav justify-content-center float-xl-end bg-black fc-white">
+        <nav class="nav justify-content-center float-xl-end">
           <a class="nav-link" href="./servies.html">SERVICES</a>
           <a class="nav-link" href="./about.html">ABOUT</a>
           <a class="nav-link active" href="./faq.html">FAQ</a>
@@ -77,7 +76,7 @@
     </div>
     <!--END NAV-->
     <!--HEADER-->
-    <header class="bg-white fc-black">
+    <header>
         <div class="container-lg">
             <h1>Frequently&nbsp;Asked&nbsp;Questions</h1>
             <h3>Let's start with a favorite question: &ldquo;How do I lower expenses, increase profits and gain&nbsp;free&nbsp;time?&rdquo;</h3>
@@ -210,7 +209,7 @@
         </nav></div>
         <!--END NAV-->
         <!--FOOTER-->
-        <footer id="contact" class="bg-white fc-black">
+        <footer>
             <h2>Bookkeeping &bull; Accounting &bull; Payroll &bull; Tax<br>for Colorado Contractors</h2>
             <h1>[BKCC]</h1><p>&nbsp;</p>
             <div class="container-lg">
