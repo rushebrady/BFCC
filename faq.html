@@ -52,17 +52,18 @@
             .bold500{font-weight:500;} .bold600{font-weight:600;} .bold700{font-weight:700;} .bold800{font-weight:800;} .bold900{font-weight:900;}
             .font22{font-size:22px;} .font24{font-size:24px;} .font26{font-size:26px;} .font36{font-size:36px;} .font40{font-size:40px;} .font44{font-size:44px;}
     
-            header h3 {padding-top:30px; padding-bottom:30px; text-align:center;}
+            header h3 {padding:30px 0;}
             @media (min-width:576px) {header div h1 {font-size:42px;} header div h3 {font-size:24px;} }
             @media (min-width:768px) {header div h1 {font-size:54px;} header div h3 {font-size:30px;} }
             @media (min-width:992px) {header div h1 {font-size:70px;} header div h3 {font-size:34px;} }
             @media (min-width:1200px) {header div h1 {font-size:76px;} header div h3 {font-size:38px;} }
             @media (min-width:1400px) {header div h1 {font-size:82px;} header div h3 {font-size:42px;} }
-            
-            @media (min-width:1200px) {section#faq {padding-right:16%; padding-left:16%;}}
-            @media (min-width:1400px) {section#faq {padding-right:20%; padding-left:20%;}}
-            button.accordion-button {font-size:22px;}
-            div.accordion-body {font-size:20px; padding-left:5%;}
+
+
+            section#faq button.accordion-button {font-size:22px;}
+            section#faq div.accordion-body {font-size:20px; padding-left:5%;}
+            @media (min-width:1200px) { section#faq {padding-right:16%;padding-left:16%;} }
+            @media (min-width:1400px) { section#faq {padding-right:20%;padding-left:20%;} }
         </style>
     </head>
 <body class="bg-black">
@@ -75,7 +76,6 @@
           <a class="nav-link" href="./about.html">ABOUT</a>
           <a class="nav-link active" href="./faq.html">FAQ</a>
           <a class="nav-link" href="./pricing.html">PRICING</a>
-          <!--<a class="nav-link fw-bold py-3 px-0" href="#contact">CONTACT</a>-->
         </nav>
     </div>
     <!--END NAV-->
@@ -89,9 +89,9 @@
     </header>
     <!--END HEADER-->
     <!--MAIN-->
-    <main class="bg-black">
+    <main>
         <!--FAQ-->
-        <section id="faq" class="bg-black">
+        <section id="faq">
             <div id="accordionfaq" class="accordion">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
