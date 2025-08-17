@@ -16,10 +16,10 @@
         <link href="navbar.css" rel="stylesheet">
         <style>
             section#navbar-top {color:#ffffff; background-color:#38b9b9; padding:18px 10px 18px 14px;}
-            section#navbar-top a#logo.nav-link {color:#ffffff; border-bottom:4px solid transparent; text-align:center; padding-top:6px; margin:0;}
-            section#navbar-top a#logo.nav-link.active {color:#000000; font-weight:700;}
-            section#navbar-top a#logo.nav-link:hover {color:#000000; border-bottom-color:#000000; font-weight:700;}
-            section#navbar-top nav {padding:2px 0 0 0; margin:0;}
+            section#navbar-top a#logo.nav-link {color:#ffffff; border-bottom:4px solid transparent; text-align:center; margin:0; padding-top:6px;}
+            section#navbar-top a#logo.nav-link.active {color:#ffffff; border-bottom-color:transparent;}
+            section#navbar-top a#logo.nav-link:hover {color:#ffffff; border-bottom-color:transparent;}
+            section#navbar-top nav {margin:0; padding:2px 0 0 0;}
             section#navbar-top nav a.nav-link {color:#ffffff; border-bottom:4px solid transparent; margin-left:16px;}
             section#navbar-top nav a.nav-link.active {color:#000000; border-bottom-color:#000000; font-weight:700;}
             section#navbar-top nav a.nav-link:hover, a.nav-link:focus {color:#000000; border-bottom-color:#000000;}
@@ -28,9 +28,9 @@
             @media (max-width:575px) { section#navbar-top nav {font-size:18px; font-weight:300;} }
             @media (min-width:576px) { section#navbar-top nav {font-size:25px; font-weight:400;} }
             @media (min-width:768px) { section#navbar-top nav {font-size:27px; font-weight:400;} }
-            section#navbar-bottom {color:#ffffff; background-color:#000000; font-weight:300; text-align:center; padding-top:30px; padding-bottom:70px;}
+            section#navbar-bottom {color:#ffffff; background-color:#000000; font-weight:200; text-align:center; padding-top:30px; padding-bottom:60px;}
             section#navbar-bottom div nav {padding:0; margin:0;}
-            section#navbar-bottom div nav a.nav-link {color:#ffffff; border-bottom:4px solid transparent; margin-left:16px;}
+            section#navbar-bottom div nav a.nav-link {color:#ffffff; border-bottom:3px solid transparent; margin-left:16px;}
             section#navbar-bottom div nav a.nav-link:hover, a.nav-link:focus {border-bottom-color:#ffffff;}
             section#navbar-bottom div nav a.nav-link.active {border-bottom-color:#ffffff;}
             @media (max-width:575px) { section#navbar-bottom div nav {font-size:22px;} }
@@ -46,26 +46,27 @@
             @media (min-width:992px) { section#abovefooter h1 {font-size:50px;} section#abovefooter h2 {font-size:56px;} section#abovefooter div h3 {font-size:40px;} }
             @media (min-width:1200px) { section#abovefooter h1 {font-size:60px;} section#abovefooter div h3 {font-size:50px;} }
             @media (min-width:1400px) { section#abovefooter h1 {font-size:70px;} }
-            section {padding:90px 0; margin:0;}
-            header {text-align:center; padding:26px 0; margin:0;}
-            footer {color:#ffffff; background-color:#000000; font-weight:300; text-align:center; padding:0 0 30px 0; margin:0;}
+            section {margin:0; padding:90px 0;}
+            header {text-align:center; margin:0; padding:34px 0;}
+            footer {color:#ffffff; background-color:#000000; font-weight:200; text-align:center; margin:0; padding:0 0 30px 0;}
             footer div a {color:#ffffff; border-bottom-color:#ffffff;}
-            address {padding:0; margin:0;}
+            address {margin:0; padding:0;}
             img {max-width:100%; height:auto; display:block; border:0; outline:0; margin:0 auto;}
-            p {font-size:20px; font-weight:400; line-height:1.6; padding-bottom:18px; margin:0;}
-            mark {font-size:20px; font-weight:600; line-height:1.6; background-color:yellow; padding:0; margin:0;}
-            h1 {font-size:80px; font-weight:800; line-height:1.6; text-align:center; color:#38b9b9; padding:0 0 50px 0; margin:0;}
+            p {font-size:20px; font-weight:400; line-height:1.6; margin:0; padding-bottom:18px;}
+            mark {font-size:20px; font-weight:600; line-height:1.6; background-color:yellow; margin:0; padding:0;}
+            h1 {font-size:80px; font-weight:800; line-height:1.6; text-align:center; color:#38b9b9; margin:0; padding:0 0 50px 0;}
             h2 {font-size:60px; font-weight:600; line-height:1.7; text-align:center; margin:0;}
             h3 {font-size:50px; font-weight:400; line-height:1.7; margin:0;}
-            h4 {font-size:40px; font-weight:400; line-height:1.7; padding:0; margin:0;}
-            h5{font-size:30px; font-weight:300; line-height:1.6; padding:0; margin:0;}
-            h6{font-size:25px; padding:0; margin:0;}
+            h4 {font-size:40px; font-weight:400; line-height:1.7; margin:0; padding:0;}
+            h5{font-size:30px; font-weight:300; line-height:1.6; margin:0; padding:0;}
+            h6{font-size:25px; margin:0; padding:0;}
             li {font-size:30px; line-height:2.0;}
             .ps-6{padding-left:60px;} .ps-7{padding-left:70px;} .ps-8{padding-left:80px;} .ps-9{padding-left:90px;}
-            .lst-none {list-style-type:none;}
-            .fs-italic {font-style:italic;} .fc-black{color:#000000;} .fc-white{color:#ffffff;} .fc-turquoise{color:#38b9b9;}
-            .bg-silver{background-color:#dcdcdc;} .bg-turquoise{background-color:#38b9b9;}
+            .border0{border:0;}
+            .lst-none{list-style-type:none;}
             .bold500{font-weight:500;} .bold600{font-weight:600;} .bold700{font-weight:700;} .bold800{font-weight:800;} .bold900{font-weight:900;}
+            .fc-black{color:#000000;} .fc-white{color:#ffffff;} .fc-turquoise{color:#38b9b9;} .fs-italic{font-style:italic;}
+            .bg-silver{background-color:#dcdcdc;} .bg-turquoise{background-color:#38b9b9;}
             .font22{font-size:22px;} .font24{font-size:24px;} .font26{font-size:26px;} .font36{font-size:36px;} .font40{font-size:40px;} .font44{font-size:44px;}
     
             header h3 {padding:30px 0;}
